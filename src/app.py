@@ -14,7 +14,7 @@ def load_expenses():
 
 @app.route("/")
 def home():
-    return "AI Budget Assistant for Students"
+    return "AI Budget Assistant for all Students"
 
 @app.route("/expenses")
 def expenses():
