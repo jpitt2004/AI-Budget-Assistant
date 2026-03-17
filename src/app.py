@@ -26,7 +26,7 @@ def prediction():
     total = sum(item["amount"] for item in data)
     average = total / len(data)
 
-    if average > 15:
+    if average > 20:
         message = "Warning: You may be overspending this month."
     else:
         message = "Good job! Your spending is currently under control."
