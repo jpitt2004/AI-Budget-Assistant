@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Budget Assistant</title>
+</head>
+<body>
+    <h1>AI Budget Assistant for Students</h1>
+
+    <h2>Sample Expenses</h2>
+    <ul id="expenses"></ul>
+
+    <script>
+        fetch('http://127.0.0.1:5000/expenses')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('expenses');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.date} - ${item.category}: $${item.amount}`;
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>
