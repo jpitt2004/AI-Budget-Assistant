@@ -5,6 +5,7 @@
 - Austin Pittman – Frontend Developer
 - Elijah Gordon – Backend Developer
 - Malachi Wolf – AI/Data Engineer
+- Ezekiel Sendar - Data Engineer
 - Damone Washington – QA / Testing Lead
 
 ## Problem
