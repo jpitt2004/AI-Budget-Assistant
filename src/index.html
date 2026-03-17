@@ -9,6 +9,9 @@
     <h2>Sample Expenses</h2>
     <ul id="expenses"></ul>
 
+    <h2>Spending Prediction</h2>
+    <p id="prediction"></p>
+
     <script>
         fetch('http://127.0.0.1:5000/expenses')
             .then(response => response.json())
@@ -19,6 +22,13 @@
                     li.textContent = `${item.date} - ${item.category}: $${item.amount}`;
                     list.appendChild(li);
                 });
+            });
+
+        fetch('http://127.0.0.1:5000/prediction')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('prediction').textContent =
+                    `Average Daily Spending: $${data.average_daily_spending} | ${data.alert}`;
             });
     </script>
 </body>
