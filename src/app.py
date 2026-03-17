@@ -29,10 +29,7 @@ def prediction():
     if average > 20:
         message = "Warning!: You may be overspending this month."
     else:
-        message = "Good job! Your spending is currently under control."
-
-    return jsonify({
-        "average_daily_spending": round(average, 2),
+        message = "Good job!:your spending is under control": round(average, 2),
         "alert": message
     })
 
