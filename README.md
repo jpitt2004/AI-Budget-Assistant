@@ -28,3 +28,11 @@ College students
 - Spending dashboard
 - Monthly predictions
 - Budget alerts
+## Presentation
+
+View the project presentation here:
+
+[AI Budget Assistant Presentation](./AI_Budget_Assistant_Presentation.pdf)
+
+---
+
